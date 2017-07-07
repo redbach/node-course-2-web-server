@@ -37,7 +37,7 @@ hbs.registerHelper('allCAPS', (text) => {
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'Landing Page',
-    welcomeMessage: 'Welcome To Our World! = localhost:3000/',
+    welcomeMessage: 'Welcome To Our World!',
     currentYear: new Date().getFullYear()
   });
 });
@@ -45,6 +45,13 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
+    currentYear: new Date().getFullYear()
+  });
+});
+
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'A Portfolio!',
     currentYear: new Date().getFullYear()
   });
 });
