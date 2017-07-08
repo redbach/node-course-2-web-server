@@ -49,9 +49,9 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/portfolio', (req, res) => {
-  res.render('portfolio.hbs', {
-    pageTitle: 'A Portfolio!',
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'A PORTFOLIO...',
     currentYear: new Date().getFullYear()
   });
 });
